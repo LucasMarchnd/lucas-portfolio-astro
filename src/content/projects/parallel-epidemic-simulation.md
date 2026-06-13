@@ -1,6 +1,6 @@
 ---
 title: "Parallel Epidemic Simulation"
-summary: "Simulation C comparant des implémentations séquentielle, OpenMP, MPI et hybride sur une propagation épidémique en grille."
+summary: "Simulation de propagation épidémique en grille, comparant plusieurs implémentations: séquentielle, OpenMP, MPI et hybride."
 role: "Engineering school project — C implementation, parallelization strategy and performance comparison"
 year: 2025
 status: "Done"

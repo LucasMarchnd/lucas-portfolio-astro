@@ -9,13 +9,12 @@ const { title, summary, image, stack, status, year, tags, repo } = project.data;
     </div>
     <div class="project-body">
       <div class="project-meta">
-        <span>{status}</span>
-        <span>{year}</span>
+        <span>{status} · {year}</span>
       </div>
       <h3>{title}</h3>
       <p>{summary}</p>
       <div class="chips" aria-label="Stack technique">
-        {stack.slice(0, 5).map((item: string) => <span>{item}</span>)}
+        {stack.map((item: string) => <span>{item}</span>)}
       </div>
       <div class="project-tags">
         {tags.map((tag: string) => <span>#{tag}</span>)}

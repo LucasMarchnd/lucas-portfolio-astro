@@ -1,8 +1,8 @@
 ---
 title: "PPO RL Navigation Agent"
-summary: "Agent PPO public-safe en PyTorch avec environnement de navigation générique, observations mixtes et boucle d'entraînement reproductible."
+summary: "Agent de navigation entraîné avec PPO en PyTorch, sur un environnement générique reproductible avec observations mixtes et boucle d’entraînement configurable."
 role: "Personal project — reinforcement learning, PyTorch implementation and experiment structure"
-year: 2025
+year: 2026
 status: "Done"
 featured: true
 order: 4

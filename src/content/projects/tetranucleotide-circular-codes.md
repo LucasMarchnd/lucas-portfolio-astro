@@ -1,6 +1,6 @@
 ---
 title: "Tetranucleotide Circular Codes"
-summary: "Projet C++/OpenMP de bioinformatique pour compter des codes circulaires tétranucléotidiques auto-complémentaires."
+summary: "Projet C++/OpenMP de bioinformatique pour analyser des codes circulaires tétranucléotidiques auto-complémentaires, avec attention portée à l’optimisation."
 role: "Engineering school project — OpenMP tree traversal, combinatorial search and performance-oriented C++"
 year: 2025
 status: "Done"

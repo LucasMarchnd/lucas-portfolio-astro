@@ -1,6 +1,6 @@
 ---
 title: "Movie Recommendation Engine"
-summary: "Moteur C de recommandation et statistiques inspiré de datasets type Netflix, avec parsing, sérialisation binaire et CLI."
+summary: "Moteur de recommandation et d’analyse en C, inspiré de datasets de films, avec parsing, structures de données, sérialisation binaire et interface CLI."
 role: "Engineering school project — C data structures, binary serialization, statistics and command-line tooling"
 year: 2024
 status: "Done"

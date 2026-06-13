@@ -30,16 +30,16 @@ Exemple:
 
 ```md
 ---
-title: "ADK v2 Workflow Samples"
+title: "SHARP — Smart Hand Recognition MLOps"
 summary: "Résumé court du projet."
-role: "Personal project — agent orchestration"
+role: "Group MLOps project — training pipeline and serving API"
 year: 2026
-status: "Prototype"
+status: "Done"
 featured: true
-order: 1
-stack: ["Python", "Google ADK", "Agents"]
-tags: ["agentic-ai", "backend"]
-image: "/projects/adk-v2-workflow-samples.svg"
+order: 3
+stack: ["YOLO11s", "Python", "Docker Compose", "MLflow", "FastAPI"]
+tags: ["mlops", "computer-vision"]
+image: "/projects/yolo-mlops.svg"
 repo: "https://github.com/LucasMarchnd/example"
 ---
 ```

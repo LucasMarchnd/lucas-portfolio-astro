@@ -16,15 +16,15 @@ const links = {
 const proofPoints = [
   {
     label: 'Systèmes GenAI',
-    value: 'Agents, RAG, NLP-to-SQL, boucles de validation',
+    value: 'Agents, RAG, NLP-to-SQL, routage, validation et traçabilité.',
   },
   {
     label: 'Backend Python',
-    value: 'API, tests, streaming, observabilité',
+    value: 'API, tests, streaming, observabilité et gestion d’erreurs.',
   },
   {
-    label: 'Vision / Edge',
-    value: 'RTSP, Jetson, monitoring, reprise sur erreur',
+    label: 'Vision / Edge AI',
+    value: 'RTSP, NVIDIA Jetson, monitoring, contraintes temps réel et reprise sur erreur.',
   },
 ];
 ---
@@ -32,10 +32,12 @@ const proofPoints = [
   <section class="hero" id="top">
     <div class="hero-copy-block">
       <p class="eyebrow">Portfolio · Software / AI Engineer</p>
-      <h1>Backend, IA, vision temps réel. Des projets concrets, prêts à être lus.</h1>
+      <h1>Backend Python, IA générative et vision temps réel.</h1>
       <p class="hero-copy">
-        Je suis élève ingénieur en informatique, orienté backend Python, agentic AI,
-        computer vision et systèmes robustes. Disponible pour un premier CDI à partir de septembre 2026.
+        Des projets concrets, documentés, avec du code lisible et des choix techniques expliqués.
+        Je suis élève ingénieur en informatique, spécialisé en backend Python, IA agentique,
+        computer vision et systèmes robustes. Je recherche un premier CDI de Software / AI Engineer
+        à partir de septembre 2026.
       </p>
       <div class="hero-actions" aria-label="Liens principaux">
         <a class="button primary" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
@@ -43,9 +45,9 @@ const proofPoints = [
         <a class="button ghost" href={links.email}>Email</a>
       </div>
       <div class="hero-stats" aria-label="Résumé profil">
-        <span><strong>Sept. 2026</strong> disponibilité CDI</span>
-        <span><strong>Python · Cloud · GenAI</strong> cœur de stack</span>
-        <span><strong>Paris / Strasbourg</strong> ouvert France</span>
+        <span><strong>Disponible CDI</strong> septembre 2026</span>
+        <span><strong>Stack principale</strong> Python · Cloud · GenAI</span>
+        <span><strong>Paris / Île-de-France</strong> Strasbourg · ouvert France</span>
       </div>
     </div>
 
@@ -56,8 +58,8 @@ const proofPoints = [
         <p>Disponible pour un CDI junior Software / AI Engineer</p>
       </div>
       <div class="system-card">
-        <p class="card-kicker">focus actuel</p>
-        <h2>Orchestration IA, backend fiable, edge AI.</h2>
+        <p class="card-kicker">Focus actuel</p>
+        <h2>Construire des systèmes fiables autour de l’IA, du backend et de la vision temps réel.</h2>
         <div class="focus-list">
           {proofPoints.map((point) => (
             <div>
@@ -69,7 +71,7 @@ const proofPoints = [
       </div>
       <div class="terminal-card" aria-label="Stack technique">
         <span>$ lucas --stack</span>
-        <p>Python · FastAPI · ADK · Vertex AI · BigQuery · Docker · OpenCV · C/C++</p>
+        <p>Python · FastAPI · Google ADK · Vertex AI · BigQuery · Docker · OpenCV · C/C++</p>
       </div>
     </aside>
   </section>
@@ -82,13 +84,13 @@ const proofPoints = [
     </article>
     <article>
       <span>02</span>
-      <h2>Profil hybride.</h2>
-      <p>Backend, GenAI, computer vision, systèmes parallèles et bas niveau: utile pour livrer de bout en bout.</p>
+      <h2>Un profil software + AI.</h2>
+      <p>Backend, GenAI, computer vision, calcul parallèle et systèmes bas niveau: une approche utile pour livrer des solutions de bout en bout.</p>
     </article>
     <article>
       <span>03</span>
-      <h2>Lisible vite.</h2>
-      <p>Chaque carte va droit au projet et ouvre directement le dépôt GitHub correspondant.</p>
+      <h2>Pensé pour être lu vite.</h2>
+      <p>Chaque projet présente le problème, les choix techniques, les résultats et le dépôt GitHub associé.</p>
     </article>
   </section>
 
@@ -97,8 +99,7 @@ const proofPoints = [
       <p class="eyebrow">Projets clés</p>
       <h2>Trois projets à ouvrir en premier.</h2>
       <p>
-        Une sélection courte, orientée impact: edge video analytics, MLOps,
-        reinforcement learning, HPC, compilation et engineering robuste.
+        Une sélection courte de projets orientés impact: vision temps réel, MLOps et intelligence artificielle appliquée.
       </p>
     </div>
     <div class="project-grid featured-grid">
@@ -108,12 +109,42 @@ const proofPoints = [
 
   <section class="section compact">
     <div class="section-heading">
-      <p class="eyebrow">Autres projets</p>
-      <h2>D'autres projets qui montrent le niveau</h2>
+      <p class="eyebrow">Autres projets techniques</p>
+      <h2>D’autres projets pour montrer la profondeur technique.</h2>
     </div>
     <div class="project-grid">
       {otherProjects.map((project) => <ProjectCard project={project} />)}
     </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-heading">
+      <p class="eyebrow">Labs / Work in progress</p>
+      <h2>Projets en cours de consolidation ou de publication.</h2>
+    </div>
+    <article class="lab-card">
+      <div class="project-meta">
+        <span>WIP · 2026</span>
+      </div>
+      <h3>Agentic NLP-to-SQL Workflow</h3>
+      <p>
+        Prototype public-safe autour de workflows agentiques pour le NLP-to-SQL:
+        routage, génération SQL, dry-run, correction automatique, validation et traçabilité.
+      </p>
+      <div class="chips" aria-label="Stack technique">
+        <span>Python</span>
+        <span>Google ADK</span>
+        <span>SQL</span>
+        <span>Agents</span>
+        <span>GenAI</span>
+      </div>
+      <div class="project-tags">
+        <span>#agentic-ai</span>
+        <span>#nlp-to-sql</span>
+        <span>#backend</span>
+      </div>
+      <span class="project-link muted">Bientôt disponible</span>
+    </article>
   </section>
 
   <section class="section about" id="about">

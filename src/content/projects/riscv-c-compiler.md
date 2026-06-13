@@ -1,6 +1,6 @@
 ---
 title: "Tiny C-to-RISC-V Compiler"
-summary: "Compilateur pédagogique générant du RISC-V à partir d'un sous-ensemble de C, utile pour montrer le niveau système."
+summary: "Compilateur pédagogique générant du RISC-V à partir d’un sous-ensemble de C, avec parsing, génération de code et logique système."
 role: "Engineering school project — parsing, IR simple, code generation et tests"
 year: 2025
 status: "Done"

@@ -353,6 +353,26 @@ p { line-height: 1.7; }
   content: " ->";
   padding-left: 6px;
 }
+.project-link.muted {
+  color: var(--muted);
+}
+.project-link.muted::after {
+  content: "";
+  padding-left: 0;
+}
+.lab-card {
+  max-width: 760px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(247, 245, 239, 0.88)),
+    var(--panel);
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+.lab-card p {
+  color: var(--muted);
+}
 .about {
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;

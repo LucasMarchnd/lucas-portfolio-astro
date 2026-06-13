@@ -1,6 +1,6 @@
 ---
 title: "Genetic Snake AI"
-summary: "Snake en Python entraîné par algorithme génétique, avec sélection, mutation et décisions pilotées par un génome."
+summary: "Jeu Snake en Python avec agent entraîné par algorithme génétique: sélection, mutation et décisions pilotées par un génome."
 role: "Personal project — genetic algorithm, gameplay loop and AI decision logic"
 year: 2025
 status: "Done"

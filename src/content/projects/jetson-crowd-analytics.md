@@ -1,6 +1,6 @@
 ---
 title: "Real-Time Crowd Analytics on NVIDIA Jetson"
-summary: "Plateforme temps réel d'analyse de foule avec flux RTSP, depth maps, supervision et reprise sur erreur pour un contexte événementiel."
+summary: "Plateforme temps réel d’analyse de foule pour un contexte événementiel, avec flux RTSP, depth maps, supervision et reprise sur erreur."
 role: "Software Engineer — pipeline vision, backend Flask, frontend React, Nginx et déploiement edge"
 year: 2025
 status: "Done"

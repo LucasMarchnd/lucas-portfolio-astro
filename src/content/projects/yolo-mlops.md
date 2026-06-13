@@ -1,8 +1,8 @@
 ---
 title: "SHARP — Smart Hand Recognition MLOps"
-summary: "Pipeline MLOps pour compter les doigts en temps réel avec YOLO11s, MLflow, MinIO/S3, model registry, FastAPI et React."
+summary: "Pipeline MLOps complet pour détecter et compter les doigts en temps réel, avec entraînement YOLO, suivi d’expériences, model registry, API et interface web."
 role: "Group MLOps project — training pipeline, dataset validation, model tracking, serving API and web interface integration"
-year: 2025
+year: 2026
 status: "Done"
 featured: true
 order: 3
