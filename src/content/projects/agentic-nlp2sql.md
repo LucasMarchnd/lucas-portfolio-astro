@@ -9,7 +9,6 @@ order: 1
 image: "/projects/agentic-nlp2sql.svg"
 stack: ["Python", "Google ADK", "Vertex AI", "BigQuery", "RAG", "AgentsOps", "Testing"]
 tags: ["agentic-ai", "backend", "nlp2sql"]
-repo: "https://github.com/LucasMarchnd"
 ---
 
 ## Problème

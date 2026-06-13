@@ -19,5 +19,6 @@ const { title, summary, image, stack, status, year, tags } = project.data;
     <div class="project-tags">
       {tags.map((tag: string) => <span>#{tag}</span>)}
     </div>
+    <a class="project-link" href={`/projects/${project.id}/`}>Lire le case study</a>
   </div>
 </article>

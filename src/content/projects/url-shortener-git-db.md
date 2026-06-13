@@ -9,7 +9,6 @@ order: 5
 image: "/projects/url-shortener-git-db.svg"
 stack: ["Python", "FastAPI", "Git", "Hashing", "System Design", "Tests"]
 tags: ["backend", "fun-project", "system-design"]
-repo: "https://github.com/LucasMarchnd"
 ---
 
 ## Concept

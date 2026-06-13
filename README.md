@@ -1,6 +1,13 @@
-# Lucas Marchand — Astro Portfolio
+# Lucas Marchand — Portfolio Astro
 
-Portfolio statique pour `lucasmarchand.dev`, orienté projets Software / AI Engineer.
+Portfolio statique pour `lucasmarchand.dev`, orienté recruteurs Software / AI Engineer.
+
+Liens publics:
+
+- Site: https://lucasmarchand.dev
+- GitHub: https://github.com/LucasMarchnd
+- LinkedIn: https://www.linkedin.com/in/lucassmarchand
+- Email: contact@lucasmarchand.dev
 
 ## Lancer en local
 
@@ -49,11 +56,17 @@ npm run build
 npm run preview
 ```
 
-## Déploiement simple
+## Déploiement Cloudflare Pages
+
+- Framework preset: `Astro`
+- Build command: `npm run build`
+- Output directory: `dist`
+- Production branch: `main`
+
+## Autres déploiements
 
 - Vercel: importe le repo GitHub, framework Astro détecté automatiquement.
 - Netlify: idem, commande `npm run build`, dossier `dist`.
-- Cloudflare Pages: commande `npm run build`, dossier `dist`.
 
 ## Idée de structure recruteur
 

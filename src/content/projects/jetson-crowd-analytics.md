@@ -9,7 +9,7 @@ order: 2
 image: "/projects/jetson-crowd-analytics.svg"
 stack: ["Python", "OpenCV", "NVIDIA Jetson", "Flask", "React", "Nginx", "RTSP"]
 tags: ["computer-vision", "edge-ai", "realtime"]
-repo: "https://github.com/LucasMarchnd"
+repo: "https://github.com/LucasMarchnd/edge-video-ai-crowd-monitoring"
 ---
 
 ## Problème

@@ -7,9 +7,13 @@ type Props = {
 };
 
 const {
-  title = 'Lucas Marchand — Software & AI Engineer',
-  description = 'Portfolio de Lucas Marchand: backend, agentic AI, NLP-to-SQL, cloud et systèmes temps réel.'
+  title = 'Lucas Marchand — Software / AI Engineer',
+  description = 'Portfolio de Lucas Marchand: backend Python, agentic AI, NLP-to-SQL, computer vision temps réel et systèmes robustes.'
 } = Astro.props;
+
+const linkedinUrl = 'https://www.linkedin.com/in/lucassmarchand';
+const githubUrl = 'https://github.com/LucasMarchnd';
+const emailUrl = 'mailto:contact@lucasmarchand.dev';
 ---
 <!doctype html>
 <html lang="fr">
@@ -20,6 +24,8 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucasmarchand.dev" />
+    <meta name="theme-color" content="#07130f" />
     <link rel="icon" href="/favicon.svg" />
     <title>{title}</title>
   </head>
@@ -27,17 +33,18 @@ const {
     <header class="site-header">
       <a class="brand" href="/">Lucas Marchand</a>
       <nav aria-label="Navigation principale">
-        <a href="/#projects">Projects</a>
-        <a href="/#about">About</a>
-        <a href="mailto:marchandlucas3@gmail.com">Contact</a>
-        <a href="https://github.com/LucasMarchnd" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="/#projects">Projets</a>
+        <a href="/#about">Profil</a>
+        <a href={linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a>
+        <a class="nav-cta" href={emailUrl}>Contact</a>
       </nav>
     </header>
     <main>
       <slot />
     </main>
     <footer class="site-footer">
-      <p>Built with Astro · Available for a junior Software / AI Engineer role from September 2026.</p>
+      <p>lucasmarchand.dev · Built with Astro · Available from September 2026.</p>
     </footer>
   </body>
 </html>

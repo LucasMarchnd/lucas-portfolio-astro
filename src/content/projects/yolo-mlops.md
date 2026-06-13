@@ -1,5 +1,5 @@
 ---
-title: "YOLO MLOps Pipeline"
+title: "SHARP — YOLO MLOps Pipeline"
 summary: "Pipeline de détection d'objets avec dataset annoté, entraînement YOLO, tracking d'expériences et packaging Docker."
 role: "ML / MLOps project — dataset, training, Docker pipeline, MLflow et gestion de modèles"
 year: 2025
@@ -9,7 +9,7 @@ order: 4
 image: "/projects/yolo-mlops.svg"
 stack: ["YOLO", "Python", "Docker", "MLflow", "Object Detection"]
 tags: ["mlops", "computer-vision"]
-repo: "https://github.com/LucasMarchnd"
+repo: "https://github.com/AliceLaurent/Smart-Hand-Automated-Recognition-Project"
 ---
 
 ## Objectif

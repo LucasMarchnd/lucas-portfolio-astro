@@ -6,33 +6,99 @@ import ProjectCard from '../components/ProjectCard.astro';
 const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
 const featured = projects.filter((project) => project.data.featured);
 const otherProjects = projects.filter((project) => !project.data.featured);
+
+const links = {
+  linkedin: 'https://www.linkedin.com/in/lucassmarchand',
+  github: 'https://github.com/LucasMarchnd',
+  email: 'mailto:contact@lucasmarchand.dev',
+};
+
+const proofPoints = [
+  {
+    label: 'GenAI systems',
+    value: 'Agents, RAG, NLP-to-SQL, validation loops',
+  },
+  {
+    label: 'Backend',
+    value: 'Python APIs, tests, streaming, observability',
+  },
+  {
+    label: 'Real-time / Edge',
+    value: 'RTSP, Jetson, monitoring, recovery paths',
+  },
+];
 ---
 <BaseLayout>
-  <section class="hero">
-    <p class="eyebrow">Junior Software Engineer · Agentic AI · Backend</p>
-    <h1>Je construis des systèmes backend et IA orientés production.</h1>
-    <p class="hero-copy">
-      Élève ingénieur en informatique, actuellement sur des workflows GenAI industriels: NLP-to-SQL,
-      agents, validation SQL, streaming backend, tests, observabilité et contraintes cloud.
-    </p>
-    <div class="hero-actions">
-      <a class="button primary" href="#projects">Voir les projets</a>
-      <a class="button" href="mailto:marchandlucas3@gmail.com">Me contacter</a>
+  <section class="hero" id="top">
+    <div class="hero-copy-block">
+      <p class="eyebrow">Portfolio · Software / AI Engineer</p>
+      <h1>Je transforme des idées IA en systèmes qui tiennent en production.</h1>
+      <p class="hero-copy">
+        Élève ingénieur en informatique, orienté backend Python, agentic AI, computer vision
+        temps réel et systèmes robustes. Disponible pour un premier CDI à partir de septembre 2026.
+      </p>
+      <div class="hero-actions" aria-label="Liens principaux">
+        <a class="button primary" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
+        <a class="button ghost" href={links.email}>Email</a>
+      </div>
+      <div class="hero-stats" aria-label="Résumé profil">
+        <span><strong>Sept. 2026</strong> disponibilité CDI</span>
+        <span><strong>Python · Cloud · GenAI</strong> cœur de stack</span>
+        <span><strong>Paris / Strasbourg</strong> ouvert France</span>
+      </div>
     </div>
-    <div class="hero-stats" aria-label="Résumé profil">
-      <span><strong>Sept. 2026</strong> disponibilité CDI</span>
-      <span><strong>Python / Cloud</strong> backend & data</span>
-      <span><strong>GenAI</strong> agents & NLP2SQL</span>
-    </div>
+
+    <aside class="hero-panel" aria-label="Résumé recruteur">
+      <div class="panel-orbit" aria-hidden="true"></div>
+      <div class="availability-card">
+        <span class="status-dot"></span>
+        <p>Open to junior Software / AI Engineer roles</p>
+      </div>
+      <div class="system-card">
+        <p class="card-kicker">current focus</p>
+        <h2>Agentic workflows, backend reliability, edge AI.</h2>
+        <div class="signal-list">
+          {proofPoints.map((point) => (
+            <div>
+              <strong>{point.label}</strong>
+              <span>{point.value}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="terminal-card" aria-label="Stack technique">
+        <span>$ lucas --stack</span>
+        <p>Python · FastAPI · ADK · Vertex AI · BigQuery · Docker · OpenCV · C/C++</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section proof-strip" aria-label="Arguments recruteur">
+    <article>
+      <span>01</span>
+      <h2>Pas juste des notebooks.</h2>
+      <p>Des projets avec architecture, contraintes terrain, tests, déploiement et compromis techniques.</p>
+    </article>
+    <article>
+      <span>02</span>
+      <h2>Profil hybride.</h2>
+      <p>Backend, GenAI, computer vision, systèmes parallèles et bas niveau: utile pour livrer de bout en bout.</p>
+    </article>
+    <article>
+      <span>03</span>
+      <h2>Lisible vite.</h2>
+      <p>Chaque page projet explique le problème, la solution, les choix techniques et ce que ça prouve.</p>
+    </article>
   </section>
 
   <section class="section" id="projects">
     <div class="section-heading">
       <p class="eyebrow">Selected work</p>
-      <h2>Projets à montrer aux recruteurs</h2>
+      <h2>Projets qui donnent envie d'ouvrir le GitHub.</h2>
       <p>
-        Le but: ne pas seulement montrer du code, mais expliquer le problème, l'architecture,
-        les décisions techniques et ce que le projet prouve sur ton profil.
+        Une sélection courte, orientée impact: systèmes GenAI, edge video analytics,
+        routage d'agents et engineering robuste.
       </p>
     </div>
     <div class="project-grid featured-grid">
@@ -43,7 +109,7 @@ const otherProjects = projects.filter((project) => !project.data.featured);
   <section class="section compact">
     <div class="section-heading">
       <p class="eyebrow">More engineering</p>
-      <h2>Autres projets techniques</h2>
+      <h2>Autres signaux techniques</h2>
     </div>
     <div class="project-grid">
       {otherProjects.map((project) => <ProjectCard project={project} />)}
@@ -53,12 +119,23 @@ const otherProjects = projects.filter((project) => !project.data.featured);
   <section class="section about" id="about">
     <div>
       <p class="eyebrow">About</p>
-      <h2>Positionnement</h2>
+      <h2>Le positionnement en une phrase.</h2>
     </div>
     <p>
-      Je vise un premier CDI de Software / AI Engineer à partir de septembre 2026, avec un intérêt fort
-      pour les applications robustes, testées et maintenables: API Python, orchestration, data workflows,
-      systèmes GenAI et mise en production.
+      Je cherche à rejoindre une équipe qui construit des produits techniques sérieux:
+      backend Python, orchestration IA, data workflows, vision temps réel, cloud et systèmes maintenables.
     </p>
+  </section>
+
+  <section class="contact-band" id="contact" aria-label="Contact">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Un recruteur doit pouvoir agir en 5 secondes.</h2>
+    </div>
+    <div class="contact-actions">
+      <a class="button primary" href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="button" href={links.github} target="_blank" rel="noreferrer">GitHub</a>
+      <a class="button ghost" href={links.email}>contact@lucasmarchand.dev</a>
+    </div>
   </section>
 </BaseLayout>

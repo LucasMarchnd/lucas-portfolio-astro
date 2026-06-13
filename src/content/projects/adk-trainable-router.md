@@ -9,7 +9,6 @@ order: 3
 image: "/projects/adk-trainable-router.svg"
 stack: ["Python", "PyTorch", "Sentence Transformers", "uv", "Packaging", "Testing"]
 tags: ["agents", "routing", "ml-engineering"]
-repo: "https://github.com/LucasMarchnd"
 ---
 
 ## Idée

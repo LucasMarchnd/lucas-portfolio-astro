@@ -9,7 +9,7 @@ order: 6
 image: "/projects/riscv-c-compiler.svg"
 stack: ["C", "RISC-V", "Compiler", "Parsing", "Systems"]
 tags: ["systems", "compiler"]
-repo: "https://github.com/LucasMarchnd"
+repo: "https://github.com/LucasMarchnd/corec-riscv-compiler"
 ---
 
 ## Objectif
