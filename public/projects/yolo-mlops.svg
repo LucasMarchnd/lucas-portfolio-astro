@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#10281f"/>
-      <stop offset="1" stop-color="#07130f"/>
-    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#10130f" stroke-opacity="0.045"/>
+    </pattern>
   </defs>
-  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
-  <circle cx="970" cy="125" r="190" fill="#3effa3" opacity="0.16"/>
-  <circle cx="205" cy="555" r="240" fill="#e4ff6a" opacity="0.12"/>
-  <rect x="88" y="82" width="1024" height="511" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(228,255,106,0.26)"/>
-  <text x="132" y="160" fill="#e4ff6a" font-family="Space Grotesk, Arial" font-size="26" font-weight="700">GITHUB PROJECT</text>
-  <text x="132" y="252" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">SMART HAND</text>
-  <text x="132" y="322" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">RECOGNITION MLOPS</text>
-  <rect x="132" y="390" width="175" height="64" rx="18" fill="#123428"/>
-  <rect x="332" y="390" width="175" height="64" rx="18" fill="#123428"/>
-  <rect x="532" y="390" width="175" height="64" rx="18" fill="#123428"/>
-  <rect x="732" y="390" width="175" height="64" rx="18" fill="#123428"/>
-  <path d="M307 422h25M507 422h25M707 422h25" stroke="#3effa3" stroke-width="7" stroke-linecap="round"/>
-  <text x="166" y="431" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="19">dataset</text>
-  <text x="378" y="431" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="19">train</text>
-  <text x="570" y="431" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="19">track</text>
-  <text x="772" y="431" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="19">serve</text>
-  <text x="132" y="520" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="22">yolo11 · docker · mlflow · fastapi · react</text>
+  <rect width="1200" height="675" rx="36" fill="#fbfaf5"/>
+  <rect width="1200" height="675" rx="36" fill="url(#grid)"/>
+  <circle cx="1000" cy="125" r="190" fill="#146c43" opacity="0.11"/>
+  <circle cx="205" cy="555" r="240" fill="#f5c542" opacity="0.14"/>
+  <rect x="88" y="82" width="1024" height="511" rx="30" fill="#ffffff" stroke="#d9d3c5" stroke-width="2"/>
+  <text x="132" y="160" fill="#146c43" font-family="Space Grotesk, Arial" font-size="26" font-weight="700">GITHUB PROJECT</text>
+  <text x="132" y="252" fill="#10130f" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">SMART HAND</text>
+  <text x="132" y="322" fill="#10130f" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">RECOGNITION MLOPS</text>
+  <rect x="132" y="390" width="175" height="64" rx="18" fill="#edf5ef" stroke="#c9dfcf"/>
+  <rect x="332" y="390" width="175" height="64" rx="18" fill="#edf5ef" stroke="#c9dfcf"/>
+  <rect x="532" y="390" width="175" height="64" rx="18" fill="#edf5ef" stroke="#c9dfcf"/>
+  <rect x="732" y="390" width="175" height="64" rx="18" fill="#edf5ef" stroke="#c9dfcf"/>
+  <path d="M307 422h25M507 422h25M707 422h25" stroke="#146c43" stroke-width="7" stroke-linecap="round"/>
+  <text x="166" y="431" fill="#344039" font-family="IBM Plex Mono, monospace" font-size="19">dataset</text>
+  <text x="378" y="431" fill="#344039" font-family="IBM Plex Mono, monospace" font-size="19">train</text>
+  <text x="570" y="431" fill="#344039" font-family="IBM Plex Mono, monospace" font-size="19">track</text>
+  <text x="772" y="431" fill="#344039" font-family="IBM Plex Mono, monospace" font-size="19">serve</text>
+  <text x="132" y="520" fill="#647067" font-family="IBM Plex Mono, monospace" font-size="22">yolo11 - docker - mlflow - fastapi - react</text>
 </svg>

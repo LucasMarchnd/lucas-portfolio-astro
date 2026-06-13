@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#10250f"/>
-      <stop offset="1" stop-color="#07130f"/>
-    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#10130f" stroke-opacity="0.045"/>
+    </pattern>
   </defs>
-  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
-  <circle cx="960" cy="140" r="190" fill="#7ddcff" opacity="0.16"/>
-  <circle cx="230" cy="550" r="240" fill="#3effa3" opacity="0.12"/>
-  <rect x="88" y="82" width="1024" height="511" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(228,255,106,0.26)"/>
-  <text x="132" y="160" fill="#e4ff6a" font-family="Space Grotesk, Arial" font-size="26" font-weight="700">GITHUB PROJECT</text>
-  <text x="132" y="252" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">PPO RL</text>
-  <text x="132" y="322" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">NAVIGATION AGENT</text>
-  <path d="M154 442h700" stroke="#3effa3" stroke-width="8" stroke-linecap="round" opacity="0.65"/>
-  <circle cx="250" cy="442" r="22" fill="#e4ff6a"/>
-  <circle cx="622" cy="442" r="22" fill="#7ddcff"/>
-  <text x="132" y="510" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="22">policy gradient · pytorch · control</text>
+  <rect width="1200" height="675" rx="36" fill="#fbfaf5"/>
+  <rect width="1200" height="675" rx="36" fill="url(#grid)"/>
+  <circle cx="990" cy="140" r="190" fill="#1d5d9f" opacity="0.10"/>
+  <circle cx="230" cy="550" r="240" fill="#146c43" opacity="0.10"/>
+  <rect x="88" y="82" width="1024" height="511" rx="30" fill="#ffffff" stroke="#d9d3c5" stroke-width="2"/>
+  <text x="132" y="160" fill="#146c43" font-family="Space Grotesk, Arial" font-size="26" font-weight="700">GITHUB PROJECT</text>
+  <text x="132" y="252" fill="#10130f" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">PPO RL</text>
+  <text x="132" y="322" fill="#10130f" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">NAVIGATION AGENT</text>
+  <path d="M154 442h700" stroke="#146c43" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="250" cy="442" r="22" fill="#f5c542"/>
+  <circle cx="622" cy="442" r="22" fill="#1d5d9f" opacity="0.82"/>
+  <text x="132" y="510" fill="#647067" font-family="IBM Plex Mono, monospace" font-size="22">policy gradient - pytorch - control</text>
 </svg>
