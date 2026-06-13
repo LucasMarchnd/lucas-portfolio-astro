@@ -360,8 +360,12 @@ p { line-height: 1.7; }
   content: "";
   padding-left: 0;
 }
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
 .lab-card {
-  max-width: 760px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background:
@@ -465,6 +469,7 @@ p { line-height: 1.7; }
   .hero,
   .project-grid,
   .featured-grid,
+  .lab-grid,
   .project-hero,
   .about,
   .proof-strip,

@@ -27,6 +27,28 @@ const proofPoints = [
     value: 'RTSP, NVIDIA Jetson, monitoring, contraintes temps réel et reprise sur erreur.',
   },
 ];
+
+const labs = [
+  {
+    status: 'WIP · 2026',
+    title: 'Agentic NLP-to-SQL Workflow',
+    summary:
+      'Prototype public-safe autour de workflows agentiques pour le NLP-to-SQL: routage, génération SQL, dry-run, correction automatique, validation et traçabilité.',
+    stack: ['Python', 'Google ADK', 'SQL', 'Agents', 'GenAI'],
+    tags: ['agentic-ai', 'nlp-to-sql', 'backend'],
+    action: 'Bientôt disponible',
+  },
+  {
+    status: 'Prototype · 2026',
+    title: 'ADK v2 Workflow Samples',
+    summary:
+      'Exemples de workflows graph-based pour expérimenter orchestration, routage, outils et patterns agentiques avec Google ADK.',
+    stack: ['Python', 'Google ADK', 'Agents', 'Workflows'],
+    tags: ['agentic-ai', 'workflow-design', 'python'],
+    action: 'Voir sur GitHub',
+    repo: 'https://github.com/LucasMarchnd/adk-v2-workflow-samples',
+  },
+];
 ---
 <BaseLayout>
   <section class="hero" id="top">
@@ -122,29 +144,28 @@ const proofPoints = [
       <p class="eyebrow">Labs / Work in progress</p>
       <h2>Projets en cours de consolidation ou de publication.</h2>
     </div>
-    <article class="lab-card">
-      <div class="project-meta">
-        <span>WIP · 2026</span>
-      </div>
-      <h3>Agentic NLP-to-SQL Workflow</h3>
-      <p>
-        Prototype public-safe autour de workflows agentiques pour le NLP-to-SQL:
-        routage, génération SQL, dry-run, correction automatique, validation et traçabilité.
-      </p>
-      <div class="chips" aria-label="Stack technique">
-        <span>Python</span>
-        <span>Google ADK</span>
-        <span>SQL</span>
-        <span>Agents</span>
-        <span>GenAI</span>
-      </div>
-      <div class="project-tags">
-        <span>#agentic-ai</span>
-        <span>#nlp-to-sql</span>
-        <span>#backend</span>
-      </div>
-      <span class="project-link muted">Bientôt disponible</span>
-    </article>
+    <div class="lab-grid">
+      {labs.map((lab) => (
+        <article class="lab-card">
+          <div class="project-meta">
+            <span>{lab.status}</span>
+          </div>
+          <h3>{lab.title}</h3>
+          <p>{lab.summary}</p>
+          <div class="chips" aria-label="Stack technique">
+            {lab.stack.map((item) => <span>{item}</span>)}
+          </div>
+          <div class="project-tags">
+            {lab.tags.map((tag) => <span>#{tag}</span>)}
+          </div>
+          {lab.repo ? (
+            <a class="project-link" href={lab.repo} target="_blank" rel="noreferrer">{lab.action}</a>
+          ) : (
+            <span class="project-link muted">{lab.action}</span>
+          )}
+        </article>
+      ))}
+    </div>
   </section>
 
   <section class="section about" id="about">
