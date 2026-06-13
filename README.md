@@ -18,9 +18,9 @@ npm run dev
 
 Puis ouvre l'URL affichée dans le terminal.
 
-## Modifier les projets
+## Modifier les cartes projets
 
-Chaque projet est un fichier Markdown dans:
+Chaque carte projet est un fichier Markdown dans:
 
 ```txt
 src/content/projects/
@@ -30,15 +30,18 @@ Exemple:
 
 ```md
 ---
-title: "Agentic NLP-to-SQL System"
+title: "ADK v2 Workflow Samples"
 summary: "Résumé court du projet."
-stack: ["Python", "Vertex AI", "BigQuery"]
-image: "/projects/agentic-nlp2sql.svg"
+role: "Personal project — agent orchestration"
+year: 2026
+status: "Prototype"
+featured: true
+order: 1
+stack: ["Python", "Google ADK", "Agents"]
+tags: ["agentic-ai", "backend"]
+image: "/projects/adk-v2-workflow-samples.svg"
+repo: "https://github.com/LucasMarchnd/example"
 ---
-
-## Problème
-
-Texte du projet...
 ```
 
 Les images sont dans:
@@ -47,7 +50,7 @@ Les images sont dans:
 public/projects/
 ```
 
-Remplace les SVG placeholders par des captures, schémas d'architecture ou mockups propres.
+Chaque carte doit avoir un `repo` GitHub public. Le clic sur la carte ouvre directement ce dépôt.
 
 ## Build production
 
@@ -70,7 +73,7 @@ npm run preview
 
 ## Idée de structure recruteur
 
-Chaque page projet doit répondre à quatre questions:
+Chaque carte projet doit répondre vite à quatre questions:
 
 1. Quel problème réel ?
 2. Quelle architecture ?

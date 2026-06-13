@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#11271f"/>
+      <stop offset="1" stop-color="#07130f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+  <circle cx="950" cy="120" r="190" fill="#3effa3" opacity="0.15"/>
+  <circle cx="210" cy="550" r="240" fill="#7ddcff" opacity="0.12"/>
+  <rect x="88" y="82" width="1024" height="511" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(228,255,106,0.26)"/>
+  <text x="132" y="160" fill="#e4ff6a" font-family="Space Grotesk, Arial" font-size="26" font-weight="700">GITHUB PROJECT</text>
+  <text x="132" y="252" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="58" font-weight="800">TETRANUCLEOTIDE</text>
+  <text x="132" y="322" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="58" font-weight="800">CIRCULAR CODES</text>
+  <text x="132" y="430" fill="#3effa3" font-family="IBM Plex Mono, monospace" font-size="38">ATCG · TGCA · CGAT · GATC</text>
+  <text x="132" y="510" fill="#a7beb3" font-family="IBM Plex Mono, monospace" font-size="22">c++ · openmp · combinatorial search</text>
+</svg>

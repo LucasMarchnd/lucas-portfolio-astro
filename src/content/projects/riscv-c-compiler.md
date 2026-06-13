@@ -5,7 +5,7 @@ role: "Engineering school project — parsing, IR simple, code generation et tes
 year: 2025
 status: "Done"
 featured: false
-order: 6
+order: 7
 image: "/projects/riscv-c-compiler.svg"
 stack: ["C", "RISC-V", "Compiler", "Parsing", "Systems"]
 tags: ["systems", "compiler"]

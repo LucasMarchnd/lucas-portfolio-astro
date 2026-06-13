@@ -1,24 +1,26 @@
 ---
 const { project } = Astro.props;
-const { title, summary, image, stack, status, year, tags } = project.data;
+const { title, summary, image, stack, status, year, tags, repo } = project.data;
 ---
 <article class="project-card">
-  <a class="project-image" href={`/projects/${project.id}/`} aria-label={`Voir le projet ${title}`}>
-    <img src={image} alt={`Aperçu du projet ${title}`} loading="lazy" />
+  <a class="project-card-hit" href={repo} target="_blank" rel="noreferrer" aria-label={`Ouvrir le dépôt GitHub ${title}`}>
+    <div class="project-image">
+      <img src={image} alt={`Aperçu du projet ${title}`} loading="lazy" />
+    </div>
+    <div class="project-body">
+      <div class="project-meta">
+        <span>{status}</span>
+        <span>{year}</span>
+      </div>
+      <h3>{title}</h3>
+      <p>{summary}</p>
+      <div class="chips" aria-label="Stack technique">
+        {stack.slice(0, 5).map((item: string) => <span>{item}</span>)}
+      </div>
+      <div class="project-tags">
+        {tags.map((tag: string) => <span>#{tag}</span>)}
+      </div>
+      <span class="project-link">Voir sur GitHub</span>
+    </div>
   </a>
-  <div class="project-body">
-    <div class="project-meta">
-      <span>{status}</span>
-      <span>{year}</span>
-    </div>
-    <h3><a href={`/projects/${project.id}/`}>{title}</a></h3>
-    <p>{summary}</p>
-    <div class="chips" aria-label="Stack technique">
-      {stack.slice(0, 5).map((item: string) => <span>{item}</span>)}
-    </div>
-    <div class="project-tags">
-      {tags.map((tag: string) => <span>#{tag}</span>)}
-    </div>
-    <a class="project-link" href={`/projects/${project.id}/`}>Lire le case study</a>
-  </div>
 </article>
