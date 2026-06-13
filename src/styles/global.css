@@ -164,6 +164,9 @@ p { line-height: 1.7; }
 
 .hero-panel {
   position: relative;
+  display: grid;
+  gap: 14px;
+  align-content: center;
   min-height: 560px;
   animation: rise-in 800ms 120ms ease both;
 }
@@ -191,7 +194,8 @@ p { line-height: 1.7; }
 .availability-card,
 .system-card,
 .terminal-card {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(246, 244, 237, 0.84));
@@ -199,8 +203,6 @@ p { line-height: 1.7; }
   backdrop-filter: blur(18px);
 }
 .availability-card {
-  top: 24px;
-  left: 0;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -220,9 +222,8 @@ p { line-height: 1.7; }
   box-shadow: 0 0 0 8px rgba(20, 108, 67, 0.10), 0 0 26px rgba(20, 108, 67, 0.32);
 }
 .system-card {
-  top: 116px;
-  right: 0;
-  width: min(460px, 96%);
+  justify-self: end;
+  width: min(460px, 100%);
   padding: 28px;
 }
 .card-kicker,
@@ -235,7 +236,8 @@ p { line-height: 1.7; }
   text-transform: uppercase;
 }
 .system-card h2 {
-  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-size: clamp(2rem, 3.2vw, 2.95rem);
+  line-height: 1.02;
 }
 .focus-list {
   display: grid;
@@ -255,8 +257,7 @@ p { line-height: 1.7; }
   color: var(--muted);
 }
 .terminal-card {
-  right: 24px;
-  bottom: 36px;
+  justify-self: end;
   width: min(420px, 92%);
   padding: 18px;
 }
@@ -477,14 +478,12 @@ p { line-height: 1.7; }
   .hero { padding-top: 52px; }
   .hero-panel {
     min-height: auto;
-    display: grid;
-    gap: 14px;
   }
   .panel-orbit { display: none; }
   .availability-card,
   .system-card,
   .terminal-card {
-    position: static;
+    justify-self: stretch;
     width: 100%;
   }
   .proof-strip article { min-height: auto; }
