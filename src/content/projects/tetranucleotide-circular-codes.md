@@ -5,7 +5,7 @@ role: "Engineering school project — OpenMP tree traversal, combinatorial searc
 year: 2025
 status: "Done"
 featured: false
-order: 5
+order: 6
 image: "/projects/tetranucleotide-circular-codes.svg"
 stack: ["C++", "OpenMP", "Bioinformatics", "Optimization", "Algorithms"]
 tags: ["hpc", "cpp", "openmp"]

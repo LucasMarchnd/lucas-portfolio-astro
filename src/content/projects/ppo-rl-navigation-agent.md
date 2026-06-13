@@ -4,8 +4,8 @@ summary: "Agent PPO public-safe en PyTorch avec environnement de navigation gén
 role: "Personal project — reinforcement learning, PyTorch implementation and experiment structure"
 year: 2025
 status: "Done"
-featured: true
-order: 3
+featured: false
+order: 4
 image: "/projects/ppo-rl-navigation-agent.svg"
 stack: ["Python", "PyTorch", "Reinforcement Learning", "PPO", "Gym-style Env"]
 tags: ["rl", "pytorch", "ai"]

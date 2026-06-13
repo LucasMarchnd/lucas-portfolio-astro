@@ -5,7 +5,7 @@ role: "Personal project — genetic algorithm, gameplay loop and AI decision log
 year: 2025
 status: "Done"
 featured: false
-order: 4
+order: 5
 image: "/projects/genetic-snake-ai.svg"
 stack: ["Python", "Genetic Algorithm", "Game AI", "Simulation"]
 tags: ["ai", "genetic-algorithm", "python"]

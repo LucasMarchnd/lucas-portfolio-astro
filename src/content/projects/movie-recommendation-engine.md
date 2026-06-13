@@ -5,7 +5,7 @@ role: "Engineering school project — C data structures, binary serialization, s
 year: 2024
 status: "Done"
 featured: false
-order: 8
+order: 9
 image: "/projects/movie-recommendation-engine.svg"
 stack: ["C", "Data Structures", "Binary Format", "CLI", "Statistics"]
 tags: ["systems", "data", "c"]

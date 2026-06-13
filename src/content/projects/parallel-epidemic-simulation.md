@@ -5,7 +5,7 @@ role: "Engineering school project — C implementation, parallelization strategy
 year: 2025
 status: "Done"
 featured: false
-order: 6
+order: 7
 image: "/projects/parallel-epidemic-simulation.svg"
 stack: ["C", "OpenMP", "MPI", "Parallel Computing", "Benchmarking"]
 tags: ["hpc", "c", "mpi"]
