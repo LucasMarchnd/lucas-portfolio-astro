@@ -54,15 +54,20 @@ main {
 
 .site-header {
   position: sticky;
-  top: 0;
+  top: 12px;
   z-index: 20;
-  min-height: 82px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  margin-top: 12px;
+  padding: 0 10px 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
   backdrop-filter: blur(18px);
-  background: rgba(251, 250, 245, 0.72);
+  background: rgba(251, 250, 245, 0.78);
+  box-shadow: 0 18px 48px rgba(17, 24, 18, 0.08);
 }
 .brand {
   font-weight: 700;
@@ -88,7 +93,7 @@ nav a:hover,
 }
 
 .hero {
-  min-height: calc(100vh - 82px);
+  min-height: calc(100vh - 92px);
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
   align-items: center;
@@ -223,8 +228,8 @@ p { line-height: 1.7; }
 }
 .system-card {
   justify-self: end;
-  width: min(460px, 100%);
-  padding: 28px;
+  width: min(430px, 100%);
+  padding: clamp(22px, 2.6vw, 28px);
 }
 .card-kicker,
 .terminal-card span {
@@ -236,7 +241,7 @@ p { line-height: 1.7; }
   text-transform: uppercase;
 }
 .system-card h2 {
-  font-size: clamp(2rem, 3.2vw, 2.95rem);
+  font-size: clamp(1.85rem, 2.75vw, 2.55rem);
   line-height: 1.02;
 }
 .focus-list {
@@ -465,7 +470,14 @@ p { line-height: 1.7; }
 }
 
 @media (max-width: 860px) {
-  .site-header { align-items: flex-start; flex-direction: column; padding: 18px 0; position: relative; }
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px;
+    position: relative;
+    top: 0;
+    border-radius: 28px;
+  }
   nav { flex-wrap: wrap; }
   .hero,
   .project-grid,
@@ -489,6 +501,17 @@ p { line-height: 1.7; }
   .proof-strip article { min-height: auto; }
   .proof-strip span { margin-bottom: 32px; }
   .contact-actions { justify-content: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
 }
 
 @media (max-width: 560px) {
