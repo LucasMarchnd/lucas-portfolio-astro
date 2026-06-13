@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const featured = projects.filter((project) => project.data.featured);
+const otherProjects = projects.filter((project) => !project.data.featured);
+---
+<BaseLayout>
+  <section class="hero">
+    <p class="eyebrow">Junior Software Engineer · Agentic AI · Backend</p>
+    <h1>Je construis des systèmes backend et IA orientés production.</h1>
+    <p class="hero-copy">
+      Élève ingénieur en informatique, actuellement sur des workflows GenAI industriels: NLP-to-SQL,
+      agents, validation SQL, streaming backend, tests, observabilité et contraintes cloud.
+    </p>
+    <div class="hero-actions">
+      <a class="button primary" href="#projects">Voir les projets</a>
+      <a class="button" href="mailto:marchandlucas3@gmail.com">Me contacter</a>
+    </div>
+    <div class="hero-stats" aria-label="Résumé profil">
+      <span><strong>Sept. 2026</strong> disponibilité CDI</span>
+      <span><strong>Python / Cloud</strong> backend & data</span>
+      <span><strong>GenAI</strong> agents & NLP2SQL</span>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-heading">
+      <p class="eyebrow">Selected work</p>
+      <h2>Projets à montrer aux recruteurs</h2>
+      <p>
+        Le but: ne pas seulement montrer du code, mais expliquer le problème, l'architecture,
+        les décisions techniques et ce que le projet prouve sur ton profil.
+      </p>
+    </div>
+    <div class="project-grid featured-grid">
+      {featured.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-heading">
+      <p class="eyebrow">More engineering</p>
+      <h2>Autres projets techniques</h2>
+    </div>
+    <div class="project-grid">
+      {otherProjects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2>Positionnement</h2>
+    </div>
+    <p>
+      Je vise un premier CDI de Software / AI Engineer à partir de septembre 2026, avec un intérêt fort
+      pour les applications robustes, testées et maintenables: API Python, orchestration, data workflows,
+      systèmes GenAI et mise en production.
+    </p>
+  </section>
+</BaseLayout>

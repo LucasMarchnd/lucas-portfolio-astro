@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { title, summary, image, stack, role, year, status, repo, demo } = project.data;
+---
+<BaseLayout title={`${title} — Lucas Marchand`} description={summary}>
+  <article class="project-page">
+    <a class="back-link" href="/">← Retour au portfolio</a>
+    <header class="project-hero">
+      <div>
+        <p class="eyebrow">{status} · {year}</p>
+        <h1>{title}</h1>
+        <p class="hero-copy">{summary}</p>
+        <p class="role"><strong>Rôle:</strong> {role}</p>
+        <div class="hero-actions">
+          {repo && <a class="button primary" href={repo} target="_blank" rel="noreferrer">Code</a>}
+          {demo && <a class="button" href={demo} target="_blank" rel="noreferrer">Demo</a>}
+        </div>
+      </div>
+      <img src={image} alt={`Aperçu du projet ${title}`} />
+    </header>
+
+    <section class="stack-panel" aria-label="Stack technique">
+      {stack.map((item: string) => <span>{item}</span>)}
+    </section>
+
+    <section class="content prose">
+      <Content />
+    </section>
+  </article>
+</BaseLayout>
