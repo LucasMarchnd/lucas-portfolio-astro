@@ -237,21 +237,21 @@ p { line-height: 1.7; }
 .system-card h2 {
   font-size: clamp(2rem, 4vw, 3.35rem);
 }
-.signal-list {
+.focus-list {
   display: grid;
   gap: 12px;
   margin-top: 26px;
 }
-.signal-list div {
+.focus-list div {
   display: grid;
   gap: 4px;
   border-top: 1px solid var(--line);
   padding-top: 14px;
 }
-.signal-list strong {
+.focus-list strong {
   color: var(--text);
 }
-.signal-list span {
+.focus-list span {
   color: var(--muted);
 }
 .terminal-card {

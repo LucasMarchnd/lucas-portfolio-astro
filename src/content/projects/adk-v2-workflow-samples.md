@@ -4,8 +4,8 @@ summary: "Exemples publics de workflows agentiques graph-based pour expérimente
 role: "Personal project — agent orchestration, workflow design and Python examples"
 year: 2026
 status: "Prototype"
-featured: true
-order: 1
+featured: false
+order: 9
 image: "/projects/adk-v2-workflow-samples.svg"
 stack: ["Python", "Google ADK", "Agents", "Workflows", "GenAI", "Tooling"]
 tags: ["agentic-ai", "backend", "workflows"]
