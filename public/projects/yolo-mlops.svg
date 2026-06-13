@@ -10,8 +10,8 @@
   <circle cx="205" cy="555" r="240" fill="#e4ff6a" opacity="0.12"/>
   <rect x="88" y="82" width="1024" height="511" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(228,255,106,0.26)"/>
   <text x="132" y="160" fill="#e4ff6a" font-family="Space Grotesk, Arial" font-size="26" font-weight="700">GITHUB PROJECT</text>
-  <text x="132" y="252" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">SHARP</text>
-  <text x="132" y="322" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">YOLO MLOPS PIPELINE</text>
+  <text x="132" y="252" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">SMART HAND</text>
+  <text x="132" y="322" fill="#f3fff8" font-family="Space Grotesk, Arial" font-size="62" font-weight="800">RECOGNITION MLOPS</text>
   <rect x="132" y="390" width="175" height="64" rx="18" fill="#123428"/>
   <rect x="332" y="390" width="175" height="64" rx="18" fill="#123428"/>
   <rect x="532" y="390" width="175" height="64" rx="18" fill="#123428"/>
